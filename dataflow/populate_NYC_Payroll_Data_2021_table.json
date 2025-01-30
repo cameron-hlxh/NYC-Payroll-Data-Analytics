@@ -18,8 +18,7 @@
 						"referenceName": "NYC_Payroll_Data_2021",
 						"type": "DatasetReference"
 					},
-					"name": "sink1",
-					"description": "Export data to NYC_Payroll_Data_2021"
+					"name": "sink1"
 				}
 			],
 			"transformations": [],
