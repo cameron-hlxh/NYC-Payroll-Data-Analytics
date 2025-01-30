@@ -1,0 +1,21 @@
+{
+	"name": "dirstaging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adlsnycpayroll",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "dirstaging",
+				"fileSystem": "adlsnycpayroll-cameron-lb"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
