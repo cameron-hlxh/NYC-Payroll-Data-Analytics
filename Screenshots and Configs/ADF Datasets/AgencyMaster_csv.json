@@ -1,0 +1,37 @@
+{
+    "name": "AgencyMaster_csv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_adlsnycpayroll",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "ADLS Datasets"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "AgencyMaster.csv",
+                "folderPath": "dirpayrollfiles",
+                "fileSystem": "adlsnycpayroll-cameron-lb"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "AgencyID",
+                "type": "String"
+            },
+            {
+                "name": "AgencyName",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
